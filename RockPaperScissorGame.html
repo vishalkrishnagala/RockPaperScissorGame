@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="RpsStyle.css">
+</head>
+<body>
+    <div class="pop-up-start">
+        <div>Welcome to Rock-Paper-Scissor Game</div>
+        <div><input type="text" id="repeatTimes" placeholder="Enter a number"></div>
+        <div>
+            <button id="noTimesSubmit">submit</button>
+        </div>
+    </div>
+    <div class="body-game">
+        <h1>Rock-Paper-Scissor</h1>
+        <div class="choices">
+            <button onclick="playGame('rock')">✊</button>
+            <button onclick="playGame('paper')">✋</button>
+            <button onclick="playGame('scissors')">✌️</button>
+        </div>
+        <div  class="pc-Box">
+            <div class="score-box">
+                <div id="playerDisplay">PLAYER: </div>
+                <div id="scorePlayer"></div>
+            </div>
+            <div class="score-box">
+                <div id="computerDisplay">COMPUTER: </div>
+                <div id="scoreComputer"></div>
+            </div>
+        </div>
+        <div id="resultDisplay"></div>
+
+        <div class="scoreDisplay">Player Score: 
+            <span id="playerScoreDisplay">0</span>
+        </div>
+
+        <div class="scoreDisplay">Computer Score: 
+            <span id="computerScoreDisplay">0</span>
+        </div>
+    </div>
+    <div class="close-up">
+        <div>Welcome to Rock-Paper-Scissor Game</div>
+        <div id="whoWon">Its a Tie</div>
+        <div>
+            <button id="endSubmit">submit</button>
+        </div>
+    </div>
+
+    <script src="RpsGame.js"></script>
+</body>
+</html>

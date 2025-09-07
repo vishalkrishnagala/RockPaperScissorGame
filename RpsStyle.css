@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: black;
+}
+.body-game {
+    font-family: Arial, sans-serif;
+    position: relative;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pop-up-start {
+    position: fixed; /* stays in place even when scrolling */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers it */
+    z-index: 900; /* ensures it's above everything */
+    background-color: orange; /* optional: semi-transparent background */
+    padding: 30px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+h1 {
+    font-size: 3.5rem;
+    color: white;
+}
+.choices {
+    margin-bottom: 30px;
+}
+.choices button {
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: hsl(200, 100%, 50%);
+    border: solid;
+    border-color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.choices button:hover {
+    background-color: hsl(200, 100%, 70%);;
+}
+.pc-Box {
+    display: flex;
+    flex-direction: row;
+}
+.score-box {
+    border-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.close-up {
+    position: fixed; /* stays in place even when scrolling */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers it */
+    z-index: 999; /* ensures it's above everything */
+    background-color: orange;
+    padding: 30px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+#playerDisplay, #computerDisplay {
+    font-size: 2.5rem;
+    color: white;
+    display: block;
+}
+#scorePlayer, #scoreComputer {
+    font-size: 2.5rem;
+    color: white;
+    display: block;
+}
+#resultDisplay {
+    font-size: 5rem;
+    margin: 30px 0;
+}
+.scoreDisplay {
+    font-size: 2rem;
+    color: white;
+}
+.greenText, #playerScoreDisplay {
+    color: hsl(130, 84%, 54%);
+}
+.redText, #computerScoreDisplay {
+    color: hsl(0, 84%, 60%);
+}
+.yellowText {
+    color: yellow;
+}
+.makeDisapper {
+    display: none;
+}
